@@ -3,4 +3,4 @@ from os import chdir
 
 if __name__ == "__main__":
     chdir("imdbcast")
-    call(["scrapy", "crawl", "cast", "-o", "results.csv"])
+    call(["scrapy", "crawl", "cast", "-o", "cast.csv"])
