@@ -1,6 +1,8 @@
 ### Local ###
 imdbcast/cast.csv
 imdbcast/top-cast.csv
+token.json
+credentials.json
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
