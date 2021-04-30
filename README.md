@@ -8,7 +8,7 @@ For development MacOS was used.
 
 ##Installation:
 ###Python
-Navigate into the main directory and execute the following command:
+Navigate into the root directory and execute the following command:
 
 ```
 install.sh
@@ -17,7 +17,7 @@ install.sh
 If you have trouble running the code above enter `chmod +x` then try
 again.
 
-This is a critical step, as it sets up the virtual environment, installs all
+This is an important step, as it sets up the virtual environment, installs all
 dependencies and concludes the Google authentication process via a browser.
 If the `install.sh` command would not execute properly, you can execute these
 steps manually via the following commands:
@@ -31,11 +31,6 @@ You also need to create an OAuth 2.0 Client IDs on the following website:
 https://console.cloud.google.com/apis/credentials
 by clicking Create Credentials on the top.
 Then save it as credentials.json in the root directory of the project.
-
-If Google authentication would not work do the following:
-Go to https://cloud.google.com/docs/authentication/getting-started and follow
-the steps to generate create a service account and download a json key file.
-Save that file as `creds.json` in the root directory of the project.
 
 ```
 export GOOGLE_APPLICATION_CREDENTIALS="creds.json"
@@ -67,7 +62,7 @@ Run the `SendForm` function.
 
 ##Automation
 ###Python
-Start crontab by typing `crontab` then enter the following command:
+Start crontab by typing `crontab` then execute the following command:
 
 ```
 0 0 * * 0 /automation-home-assignment/automation.sh >/dev/null 2>&1

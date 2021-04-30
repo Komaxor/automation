@@ -19,8 +19,6 @@ def delete_previous(service, file_name):
 
     files = response.get('files', [])
     if len(files) > 0:
-        print("Found", len(files),
-              "earlier revisions on Google Drive, deleting them")
         for file in files:
             service.files().delete(fileId=file.get('id')).execute()
 
@@ -33,5 +31,4 @@ def upload(service, file_name):
                                   media_body=media,
                                   fields='id').execute()
     file_id = file.get('id')
-    print(file)
     return file_id

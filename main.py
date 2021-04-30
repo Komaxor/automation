@@ -9,9 +9,7 @@ if __name__ == "__main__":
     delete_csv(cast_file)
     chdir("imdbcast")
     call(["scrapy", "crawl", "cast", "-o", cast_file])
-    print(getcwd())
     chdir("..")
-    print(getcwd())
     cast_file = top_cast('imdbcast/cast.csv')
     process(cast_file)
     email_file = 'emails.csv'
