@@ -2,7 +2,8 @@
 
 The project consists of two parts: Python and Google App Scripts.
 
-##Requirements
+## Requirements
+
 The Python part was written using python 3.9.0.
 For development MacOS was used.
 
