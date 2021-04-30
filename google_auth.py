@@ -25,6 +25,7 @@ def google_auth():
         # Save the credentials for the next run
         with open('token.json', 'w') as token:
             token.write(creds.to_json())
+    return creds
 
 
 if __name__ == '__main__':

@@ -21,11 +21,9 @@ def sort_top(cast):
 
 def top_cast(cast):
     top_cast = sort_top(cast)
-    with open(file='imdbcast/top-cast.csv', mode="w") as csvfile:
+    file_name = 'imdbcast/top-cast.csv'
+    with open(file=file_name, mode="w") as csvfile:
         writer = csv.writer(csvfile)
         for actor in top_cast:
-            print(actor)
             writer.writerow([actor])
-
-
-top_cast('imdbcast/cast.csv')
+    return file_name
