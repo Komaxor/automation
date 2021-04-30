@@ -34,10 +34,6 @@ https://console.cloud.google.com/apis/credentials
 by clicking Create Credentials on the top.
 Then save it as credentials.json in the root directory of the project.
 
-```bash
-export GOOGLE_APPLICATION_CREDENTIALS="creds.json"
-```
-
 In the `emails.csv` file include all email addresses to which you would like to
 send the emails.
 
